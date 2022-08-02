@@ -1,0 +1,88 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 340px 340px 340px;
+    grid-template-rows: 3;
+    justify-content: center;
+    align-items:center;
+}
+.card {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 1px #edf1f7;
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+    max-width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #6d708d;
+}
+.card > h6{
+    margin: 0;
+    margin-bottom: 1rem;
+}
+.card:nth-child(2){
+    height: 400px;
+    background: linear-gradient(0deg, #a3a8f0 0%, #696fdd 100%);
+    color: #fff;
+    z-index: 1;
+}
+.card:nth-child(2) > li{
+    border-color: #fff;
+}
+.header{
+    text-align: center;
+    margin: 3rem 0px;
+}
+.benefits{
+    list-style: none;
+    padding: 0;
+}
+.benefits li {
+    border-top: 1px solid #edf1f7;
+    padding: 15px 0px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.benefits li:last-child{
+    border-bottom: 1px solid #edf1f7;
+}
+.price{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.price > h1{
+    margin: 0;
+}
+.card > button{
+    border:none;
+    background:linear-gradient(45deg, hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%) 100%);
+    min-height: 40px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+}
+.card > button:hover{
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid #696fdd;
+    color: #696fdd;
+}
+.card:nth-child(2) > button{
+    background: #fff;
+    color: #696fdd;
+}
+.card:nth-child(2) > button:hover{
+    background:transparent;
+    border-color: #fff;
+    color: #fff;
+}
