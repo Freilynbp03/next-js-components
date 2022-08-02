@@ -2,6 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+
+.container{
+    background: #f6f6fe;
+    height: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
 .grid-container {
     display: grid;
     grid-template-columns: 340px 340px 340px;
@@ -40,7 +50,16 @@
 }
 .header{
     text-align: center;
-    margin: 3rem 0px;
+    padding-bottom: 3rem;
+}
+.header {
+    color: #6d708d;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+}
+.header h2{
+    font-size: 24px;
+    margin-top: 0;
 }
 .benefits{
     list-style: none;
@@ -85,4 +104,34 @@
     background:transparent;
     border-color: #fff;
     color: #fff;
+}
+.switch{
+    width: 55px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #696fdd;
+    margin: 0px 10px;
+    position: relative;
+    cursor: pointer;
+}
+.switch.active{
+    background-color: hsl(236, 72%, 79%);
+}
+.switch.active::before{
+    transform: translateX(24px);
+}
+.switch::before{
+    transition: all 0.3s ease-in-out;
+    content: '';
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    background-color: #fff;
+    left: 4px;
+    top: 3px;
+    border-radius: 50%;
+}
+.header > div{
+    display: flex;
+    align-items: center;
 }
