@@ -163,4 +163,9 @@
         grid-template-columns: 325px;
         gap: 2rem;
     }
+    .bg-top{
+        position: fixed;
+        top: -60px;
+        right: -157px;
+    }
 }
