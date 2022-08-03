@@ -135,3 +135,14 @@
     display: flex;
     align-items: center;
 }
+
+@media (max-width: 575px) {
+    .container{
+        height: auto;
+        padding: 20px;
+    }
+    .grid-container{
+        grid-template-columns: 325px;
+        gap: 2rem;
+    }
+}
