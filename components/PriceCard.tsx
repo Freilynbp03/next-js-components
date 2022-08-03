@@ -1,15 +1,17 @@
 import React, { useState } from "react";
+import styles from "@styles/PriceCard.module.css";
 
-import styles from "@styles/PriceCard.module.css"
+import Image from 'next/image';
 
 const array = [
     {id:1, name: 'Basic', priceByMonthly: 19.99, priceByAnnually: 199.99, benefits: ['500 GB Storage', '2 Users Allowed', 'Send up to 3 GB']},
     {id:2, name: 'Professional', priceByMonthly: 24.99, priceByAnnually: 249.99, benefits: ['1 TB Storage', '5 Users Allowed', ' Send up to 10 GB']},
     {id:3, name: 'Master', priceByMonthly: 39.99, priceByAnnually: 399.99, benefits: [' 2 TB Storage', '10 Users Allowed', 'Send up to 20 GB']},
 ]
-// Our Pricing Annually Monthly Basic $19.99 $199.99 500 GB Storage 2 Users Allowed Send up to 3 GB Learn More Professional $24.99 $249.99 1 TB Storage 5 Users Allowed Send up 
-// to 10 GB Learn More Master $39.99 $399.99 2 TB Storage 10 Users Allowed Send up to 20 GB Learn More
-// Challenge by Frontend Mentor. Coded by Your Name Here.
+
+import bgBottom from '@assets/images/pricing-component/bg-bottom.svg'
+import bgTop from '@assets/images/pricing-component/bg-top.svg'
+
 const PriceCard = () => {
     const [monthly, changePaymentPeriod] = useState<Boolean>(false)
 
@@ -19,6 +21,12 @@ const PriceCard = () => {
     return (
         <>
         <div className={styles.container}>
+            <div className={styles['bg-bottom']}>
+                <Image src={bgBottom} alt="bg-bottom" />
+            </div>
+            <div className={styles['bg-top']}>
+                <Image src={bgTop} alt="bg-top" />
+            </div>
             <div className={styles.header}>
                 <h2> Our Pricing</h2>
                 <div>
