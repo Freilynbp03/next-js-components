@@ -1,5 +1,5 @@
 import React from 'react'
-import PriceCard from '@components/PriceCard'
+import PriceCard from '@components/PricingCard'
 
 const HomePage = () => {
     return (
